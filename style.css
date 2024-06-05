@@ -77,13 +77,41 @@ body{
     color: white;
     font-weight: 600;
 }
+
+.download:hover{
+    cursor: pointer;
+}
+
+.ios:hover, .ios:focus{
+    background-color: var(--strong-cyan);
+    box-shadow: 
+    0px 2.5px var(--strong-cyan-shadow),
+    0px 2.5px 10px var(--strong-cyan);
+    outline: none;
+    opacity: 80%;
+}
+.mac:hover, .mac:focus{
+    background-color: var(--light-blue);
+    box-shadow: 
+    0px 2.5px var(--light-blue-shadow),
+    0px 2.5px 10px var(--light-blue);
+    outline: none;              
+    opacity: 80%;
+}
+
+.download:active{
+    opacity: 120%;
+}
+
 .ios{
     background-color: var(--strong-cyan);
-    box-shadow: 0px 2.5px var(--strong-cyan-shadow);
+    box-shadow: 
+    0px 2.5px var(--strong-cyan-shadow);
 }
 .mac{
     background-color: var(--light-blue);
-    box-shadow: 0px 2.5px var(--light-blue-shadow);
+    box-shadow: 
+    0px 2.5px var(--light-blue-shadow);
 }
 
 .keep-track{
@@ -206,15 +234,32 @@ body{
 .footer{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgb(245, 246, 247);
 }
 .footer-pages{
     width: 50%;
     display: grid;
+    gap: 15px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,1fr);
 }
 .footer-link{
     text-decoration: none;
     color: var(--dark-grayish-blue)
+}
+.social-link-icon{
+    width: 25px;
+    height: 25px;
+    object-fit:contain;
+}
+
+.footer-link:hover, .social-link-icon:hover{
+    filter: invert(58%) sepia(10%) saturate(3363%) hue-rotate(122deg) brightness(106%) contrast(71%);
+}
+.footer-socials{
+    display: flex;
+    width: 5%;
+    justify-content: space-between;
 }

@@ -4,7 +4,7 @@
     padding: 0;
     font-family: "Bai Jamjuree", sans-serif;
 
-    border: 1px solid black;
+    /* border: 1px dashed black; */
 }
 
 :root{
@@ -18,7 +18,7 @@
 }
 
 body{
-    width: 100vw;
+    width: 100%;
 }
 
 .hero{
@@ -87,7 +87,7 @@ body{
 }
 
 .keep-track{
-    width: 100vw;
+    width: 100%;
     height: 200px;
     display: flex;
     align-items: center;
@@ -108,14 +108,113 @@ body{
     font-size: 14px;
 }
 
-
 .features{
-    width: 100vw;
-    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.left-panel, .right-panel{
+
+.right-panel, .left-panel{
     width: 50%;
+}
+.left-panel{
+    display: flex;
+    justify-content: flex-end;
+}
+.content{
+    margin-left: 75px;
+}
+.sub-section-title{
+    width: 200px;
+    color: var(--dark-grayish-blue);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.sub-section-text{
+    width: 300px;;
+    color: var(--grayish-blue);
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+.access{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.devices-image{
+    margin: 75px 0px;
+    width: 700px;
+}
+.access .section-title{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.access .sub-title{
+    margin-bottom: 20px; 
+    color: var(--dark-grayish-blue);
+}
+.access .sub-sub-text{
+    font-size: 14px;
+    color: var(--grayish-blue);
+}
+
+.supercharge-workflow{
+    margin-top: 50px;
+    display: flex;
+    gap: 100px;
+}
+.supercharge-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.supercharge-card .sub-section-title{
+    margin: 40px;
+    text-align: center;
+}
+.supercharge-card .sub-section-text{
+    margin-top: -20px;
+    text-align: center;
+}
+.companies{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+.company-logo{
+    width: 150px;
+    object-fit:contain;
+    margin: 40px 0px;
+}
+.download-repeat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.download-repeat .section-title{
+    margin-top: 80px;
+}
+.download-repeat .section-text{
+    margin-top: 20px;
+}
+.footer-logo{
+    width: 50px;
+    height: 50px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.footer-pages{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.footer-link{
+    text-decoration: none;
+    color: var(--dark-grayish-blue)
 }

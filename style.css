@@ -4,7 +4,7 @@
     padding: 0;
     font-family: "Bai Jamjuree", sans-serif;
 
-    /* border: 1px dashed black; */
+    border: 1px dashed black;
 }
 
 :root{
@@ -271,6 +271,69 @@ body{
 }
 .footer-socials{
     display: flex;
-    width: 5%;
+    width: 100px;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 600px){
+    .download-button-container{
+        flex-direction: column;
+    }
+    .hero-title, .hero-description{
+        width: 120%;
+    }
+    .hero{
+        height: 650px;
+    }
+    .section-text, .section-title{
+        width: 80%;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .right-panel, .left-panel{
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content{
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sub-section-title{
+        text-align: center;
+    }
+    .sub-section-text{
+        text-align: center;
+    }
+    .devices-image{
+        margin-bottom:75px;
+        margin-top: 50px;
+        width: 300px;
+    }
+    .supercharge-workflow{
+        flex-direction: column;
+    }
+    .companies{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer-pages{
+        margin: 20px 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .footer-link{
+        text-align: center;
+    }
+    .footer-socials{
+        gap: 25px;
+        width: 200px;
+    }
 }
